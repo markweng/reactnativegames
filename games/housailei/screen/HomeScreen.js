@@ -30,7 +30,7 @@ export default class HomeScreen extends Component {
 
         return (
             <View style={styles.container}>
-                <Text style={styles.title}>赛猩猩</Text>
+                <Text style={styles.title}>猴赛雷</Text>
 
                 <GameView numbers={[{ num: 0, state: 0 }, { num: 1, state: 1 }, { num: 0, state: 0 }, { num: 2, state: 1 }, { num: -1, state: 0 }, { num: 5, state: 1 }, { num: 0, state: 0 }, { num: 3, state: 1 }, { num: 4, state: 1 }]} />
 
