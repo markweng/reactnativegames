@@ -8,7 +8,8 @@ import {
     Text,
     View,
     Image,
-    TouchableOpacity
+    TouchableOpacity,
+    StatusBar
 } from 'react-native';
 import Utils from "../common/Utils";
 import DataSource from "../common/DataSource";

@@ -41,11 +41,6 @@ export default class GameScreen extends Component {
 
     componentDidMount() {
 
-        // this.timeOutTimer = setTimeout(() => {
-        //     this.gameView && this.gameView.start()
-        // }, this.getMemoryTime() * 1000)
-
-
     }
 
     rePlay() {
@@ -61,7 +56,6 @@ export default class GameScreen extends Component {
 
     gameSatrt() {
         this.setState({isPlaying: true})
-
         this.gameView && this.gameView.gameStart()
         this.setState({isMemorying: true})
 
