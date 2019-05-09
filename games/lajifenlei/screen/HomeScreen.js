@@ -24,13 +24,11 @@ const HBZS = require("../res/drawable/hbzs.png")
 const FLZS = require("../res/drawable/flzs.png")
 const PROGRESS = require("../res/drawable/progress_img.png")
 
-
 export default class HomeScreen extends Component {
 
     static navigationOptions = ({ navigation, screenProps }) => ({
         header: null,
     });
-
     constructor(props) {
         super(props);
         this.state = {
@@ -38,19 +36,15 @@ export default class HomeScreen extends Component {
             isRuning: false
         };
     }
-
     componentWillMount() {
 
     }
-
     componentDidMount() {
         StatusBar.setBarStyle("light-content")
-
     }
     componentWillUnmount() {
 
     }
-
     render() {
         if (this.state.showLoading) {
             return this.renderLoadingView();
@@ -119,9 +113,7 @@ export default class HomeScreen extends Component {
                                 }
                                 AsyncStorage.setItem("score", JSON.stringify(newJson))
                             })
-
                         }
-
                     }}
                 />
                 <FLZSModal ref={m => this.flzsModal = m} />
@@ -132,7 +124,6 @@ export default class HomeScreen extends Component {
     }
 
     startGame() {
-
         let data = this.shuffle(gameData.data)
         this.rightNum = 0
         this.currentData = data.slice(0, 5)
@@ -151,7 +142,6 @@ export default class HomeScreen extends Component {
         }
         return arr;
     }
-
 }
 
 const styles = StyleSheet.create({
@@ -160,5 +150,5 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#3BD7B4',
         alignItems: 'center'
-    },
+    }
 });

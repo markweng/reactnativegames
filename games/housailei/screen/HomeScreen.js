@@ -25,9 +25,10 @@ export default class HomeScreen extends Component {
     constructor(props) {
         super(props);
     }
-
+    componentDidMount() {
+        StatusBar.setBarStyle("dark-content")
+    }
     render() {
-
         return (
             <View style={styles.container}>
                 <Text style={styles.title}>猴赛雷</Text>
